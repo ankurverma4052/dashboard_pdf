@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Duniya Zamana Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+</style>
+<body style="background:lightgrey">
+
+<div class="container-fluid" style="background:cyan;">
+<form method="" action="">
+   <div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-2">
+			<div class="form-group"><br>
+  
+    			<!-- <input type="text" class="form-control" id="usr" name="username" placeholder="search"> -->
+    		</div>
+		</div>
+		<div class="col-sm-8"></div>
+  </div>
+</div>
+	<div style="max-width:1100px;height:auto;background:white;padding:5px;color:grey; font-family:roboto;">
+		<div class="container-fluid">
+			<span><img src="checklist.png" width="50px" height="auto"></span>
+				<h3>Basic Details</h3>
+				<hr>
+				
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-4">
+						 	<div class="form-group">
+		      					<label for="usr">Days:</label>
+		      					<input type="text" class="form-control" id="usr" name="username">
+		    				</div>
+						</div>
+						<div class="col-sm-4">
+						 	<div class="form-group">
+		      					<label for="usr">Night:</label>
+		      					<input type="text" class="form-control" id="usr" name="username">
+		    				</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="container">
+					<div class="col-md-12">
+						<h3> Customer Details</h3>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+								    <label for="dear">Dear:</label>
+								    <input name="username" id="name" placeholder="&nbsp; Enter Name" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<textarea class="form-control" rows="5" id="comment" placeholder="Type Description"></textarea>						
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" style="padding:5px;">
+					<div class="col-sm-4">
+						<h2> Per Person Cost</h2>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="form-group">
+      						<label for="usr">Flight Cost:</label>
+      						<input type="text" class="form-control" id="flight" name="flight_cost" placeholder="Mention Price">
+    					</div>
+					</div>
+
+					<span> + </span>
+
+					<div class="col-sm-2">
+						<div class="form-group">
+      						<label for="usr">Visa Cost:</label>
+      						<input type="text" class="form-control" id="visa" name="visa_cost"  placeholder="Mention Price">
+    					</div>
+					</div>
+
+					<span> + </span>
+
+					<div class="col-sm-2">
+						<div class="form-group">
+      						<label for="usr">Land Package cost:</label>
+      						<input type="text" class="form-control" id="usr" name="username"  placeholder="mention price">
+    					</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="form-group">
+      						<label for="usr">Quotation Price:</label>
+      						<input type="text" class="form-control" id="usr" name="username"  placeholder="0">
+    					</div>
+						<p>(per person)</p>
+						<p>TT commission  :  $0.00</p>
+						<p>You will earn  :  $0.00</p>
+					</div>
+				</div>
+			<hr>
+			
+			<div class="row">
+				<div class="col-sm-1">
+				<img src="hotel.png" width="50px" height="auto">
+				</div>
+				<div class="col-sm-2" style="margin-top:10px;">
+					<h6>Hotel Details<h6>
+				</div>
+					<div class="col-sm-2">
+						
+					</div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-4">
+						<label class="checkbox-inline">
+      <input type="checkbox" value="">&nbsp; Hotel Not Included
+    </label>
+					</div>
+				
+			</div><hr>
+
+
+		<div class="container">
+			<label for="hotel"><h3> Hotel Image: </h3></label>
+			<br/>
+			<form action="/action_page.php">
+  				<input type="file" name="pic" accept="image/*">
+			</form>
+		</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+				  <div class="form-group">
+   	 <label for="exampleFormControlSelect1">Nights</label>
+   	 <input type="text" class="form-control" id="days"  placeholder="Enter Days">
+   
+  </div>
+				</div>
+				<div class="col-sm-2">
+						 <div class="form-group">
+      <label for="usr">Hotal Name:</label>
+      <input type="text" class="form-control" id="usr" name="username"  placeholder="Enter Hotel Name">
+    </div>
+				</div>
+				<div class="col-sm-2">
+						 <div class="form-group">
+      <label for="usr">City:</label>
+      <input type="text" class="form-control" id="usr" name="username"  placeholder="Enter City">
+    </div>
+				</div>
+				<div class="col-sm-2">
+						 <div class="form-group">
+      <label for="usr">Raiting:</label>
+      <input type="text" class="form-control" id="usr" name="username"  placeholder="Raiting">
+    </div>
+				</div>
+				<div class="col-sm-2">
+				  <div class="form-group">
+    			<label for="exampleFormControlSelect1">Room Type</label>
+    			<input type="text" class="form-control" id="room" name="room_type"  placeholder="Room Type">
+  </div>
+				</div>
+
+		<div class="col-sm-2" style="margin-top: 35px;">
+			<button class="btn btn-danger">Add More</button>
+		</div>
+
+				
+			</div>
+			
+			<div class="row">
+			<!-- <div class="col-sm-8">
+				 <div class="form-group">
+  <label for="comment">Comments (optional):</label>
+  <textarea class="form-control" rows="5" id="comment" placeholder="comments (optional):"></textarea>
+</div> 
+			</div> -->
+				<div class="col-sm-2" >
+					<button type="button" class="btn btn-light">Reset</button>
+				</div>
+				<div class="col-sm-2">
+				<button type="button" class="btn btn-danger">Save</button>
+				</div>
+			</div><hr>
+			
+			<div class="row">
+				<div class="col-sm-2">
+				<span><img src="freight.png" width="30px" height="auto"></span>
+					<p>Flight Details</p>
+				</div>
+				<div class="col-sm-7">
+				
+				</div>
+				<div class="col-sm-3">
+					<label class="checkbox-inline">
+      <input type="checkbox" value=""> &nbsp;Flight Not Included
+    </label>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+  						<textarea class="form-control" rows="5" id="comment" placeholder="Enter Flight Details"></textarea>
+					</div> 
+				</div>
+			</div><hr>
+			
+			<div class="row">
+				<div class="col-sm-2">
+				<span><img src="pet-taxi.png" width="30px" height="auto"></span>
+					<p>Taxi Details</p>
+				</div>
+				<div class="col-sm-7">
+				
+				</div>
+				<div class="col-sm-3">
+					<label class="checkbox-inline">
+      					<input type="checkbox" value="">&nbsp; Cabs Not Included
+   					</label>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+ 
+  						<textarea class="form-control" rows="5" id="comment" placeholder="Enter Flight Details"></textarea>
+					</div> 
+				</div>
+			</div><hr>
+			
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Inclusions/Exclusions</h4>
+				</div>
+				<div class="col-sm-3">
+				<button type="button" class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">+ Click Here To Add</button>
+			
+				</div>
+			</div><hr>
+			<div class="row">
+
+				<div class="col-sm-6">
+					<h2>Day Wise Itineary</h2>
+				</div>
+			</div>
+
+			<hr>
+			
+			<div class="row">
+				<div class="col-sm-3">
+				
+				    <div class="form-group">
+				      <label for="usr">Itineary Start Dates</label>
+				      <input type="date" class="form-control">
+				    </div>
+				</div>
+				<div class="col-sm-3" style="margin-left: 15%;">
+				
+				    <div class="form-group">
+				      <label for="usr">Itineary End Dates</label>
+				      <input type="date" class="form-control">
+				    </div>
+				</div>
+			</div>
+	
+	
+	<div class="row">
+		<div class="col-sm-6">
+				  <div class="form-group">
+      <label for="usr">Day 1: Title  16 October 2019</label>
+      <input type="text" class="form-control" id="usr" name="username" placeholder="enter Title Of The Day">
+    </div>
+			</div>
+			<div class="container">
+			<label for="hotel"><h3> Sight Scene Image: </h3></label>
+			<br/>
+			<form action="/action_page.php">
+  				<input type="file" name="pic" accept="image/*">
+			</form>
+		</div>
+			<div class="col-sm-10"> 
+				 <div class="form-group">
+  <label for="comment">Describtion:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> 
+			</div>
+
+			
+			</div>
+			<div class="col-md-2">
+
+				<button class="btn btn-danger">Add More</button>
+			</div><br>
+
+			<!-- <div class="row">
+		<div class="col-sm-6">
+				  <div class="form-group">
+      <label for="usr">Day 2: Title  17 October 2019</label>
+      <input type="text" class="form-control" id="usr" name="username" placeholder="enter Title Of The Day">
+    </div>
+			</div>
+			<div class="col-sm-12"> 
+				 <div class="form-group">
+  <label for="comment">Describtion:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> 
+			</div>
+			
+			</div> -->
+			<!-- <div class="row">
+		<div class="col-sm-6">
+				  <div class="form-group">
+      <label for="usr">Day 3: Title  18 October 2019</label>
+      <input type="text" class="form-control" id="usr" name="username" placeholder="enter Title Of The Day">
+    </div>
+			</div>
+			<div class="col-sm-12"> 
+				 <div class="form-group">
+  <label for="comment">Describtion:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> 
+			</div>
+			
+			</div> --><hr>
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<h5>Miscellaneous</h5>
+				<div><hr>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					  <div class="form-group">
+  <label for="comment">Terms & Conditions:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> 
+			
+		</div>
+		<div class="col-sm-6">
+					  <div class="form-group">
+  <label for="comment">Other Informations:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> 
+			
+		</div>
+	</div>
+
+</div>
+</form>
+
+</div>
+
+
+
+
+
+<div id="id01" class="modal">
+  
+  	<form class="modal-content animate" action="/action_page.php">
+  		<section>
+	  		<div style="background-color:#66cccc; color: #fff; width: 100%; min-height: 40px; padding-top: 5px;">
+	  			<h5 style="padding-left:3%;">Inclusions/exclusion</h5>
+	  		</div>
+	  		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  		</section>
+
+    	<div class="container-fluid">
+			
+			
+	    	<form action="/action_page.php">
+		  
+			    <div class="container">
+			    	<div class="col-md-12">
+			    		<div class="row">
+			    			<div class="col-md-6">
+			    				
+			    			</div>
+
+				    		<div class="col-md-3">
+				    			<h5>Inclusions</h5>
+
+				    		</div>
+
+				    		<div class="col-md-3">
+				    			<h5>Exclusions</h5>
+				    		</div>
+				    	</div>
+			    	</div>
+			    </div>
+
+			    <section style="background-color: #f4fefd; min-height: 100px;">
+					<div class="container">
+						<h5>Meal Plan for Hotel</h5><br/>
+						<div class="row">
+							<div class="col-md-5"><h5>Breakfast</h5></div>
+							<div class="col-md-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-md-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales" checked="">
+						  	</div>
+				    	</div>
+					    	
+					
+					
+						<div class="row">
+							<div class="col-sm-5"><h5>Lunch</h5></div>
+						<div class="col-sm-3" style="margin-left: 8%;">
+						    <label class="form-check-label" for="check1"></label>
+						        <input type="checkbox" id="scales" name="scales">
+					  	</div>
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        		<input type="checkbox" id="scales" name="scales">
+						  	</div>
+				    	</div>
+					
+
+					
+					
+						<div class="row">
+							<div class="col-sm-5"><h5>Dinner</h5></div>
+						<div class="col-sm-3" style="margin-left: 8%;">
+						    <label class="form-check-label" for="check1"></label>
+						        <input type="checkbox" id="scales" name="scales">
+					  	</div>
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        		<input type="checkbox" id="scales" name="scales">
+						  	</div>
+				    	</div>
+					</div>
+				</section>
+
+				<br/>
+
+				<section style="background-color: #FFF3F3; min-height: 100px;">
+					<div class="container">
+						<h5>Houseboat Stay</h5><br/>
+						<div class="row">
+							<div class="col-sm-5"><h5>Private Houseboat</h5></div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				   
+				    	<div class="row">
+							<div class="col-sm-5"><h5>Sharing Houseboat</h5></div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+					</div>
+				</section>
+
+				<br/>
+
+				<section style="background-color: #f4fefd; min-height: 100px;">
+					<div class="container">
+						<h5>Meal Plan For Houseboat</h5><br/>
+						<div class="row">
+							<div class="col-sm-5"><h5>All Meals</h5></div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+				    
+						<div class="row">
+							<div class="col-sm-5"><h5>Lunch</h5></div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				    </div>
+				</section>
+
+				<br/>
+
+				<section style="background-color: #FFF3F3; min-height: 700px;">
+				    <div class="container">
+				    	<div class="row">
+							<div class="col-sm-5" style="margin-left: 8%;">
+								<h6 style="font-size: 16px;">Airport/Railway Station Transfers</h6>
+							</div>
+							<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+				    	</div>
+
+							<br/>
+
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Parking/Toll/ Driver Bata/ Fuel cost</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+				    	</div>
+
+				    		<br/>
+					
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Transfer Cab</h6></div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+					
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Airfare</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+					
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Early Check-in &amp; late check-out charges, if any</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+				    	</div>
+
+				    		<br/>
+						
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Tips/Porterage/Personal Expenses</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+								
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">GST/VAT/ Service Charges</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+								
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Honeymoon Inclusions</h6>
+							</div>
+							
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+						  	<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="3" id="comment_text" cols="40" style="overflow:hidden"></textarea>
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+								
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Accommodation</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+						  	<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="3" id="comment_text" cols="40" style="overflow:hidden"></textarea>
+						  	</div>
+					  
+				    	</div>
+
+				    		<br/>
+					
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Entry Fee charges</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+						  	<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="3" id="comment_text" cols="40" style="overflow:hidden"></textarea>
+						  	</div>
+					  
+				    	</div>
+						
+							<br/>
+
+				    	<div class="row">
+							<div class="col-sm-5">
+								<h6 style="font-size: 16px;">Sightseeing</h6>
+							</div>
+							<div class="col-sm-3" style="margin-left: 8%;">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+
+						  	<div class="col-sm-3">
+					      		<label class="form-check-label" for="check1"></label>
+					        	<input type="checkbox" id="scales" name="scales">
+						  	</div>
+						  	<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="3" id="comment_text" cols="40" style="overflow:hidden"></textarea>
+						  	</div>
+					  
+				    	</div>
+					</div>
+				</section>
+
+				<br/>
+
+				<section style="background-color: #f4fefd; min-height: 100px;">
+					<div class="container">
+						<h5>Others</h5><br/>
+						<div class="row">
+							<div class="col-sm-5"><h5>Other Inclusions</h5></div>
+							<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="2" id="comment_text" cols="40"></textarea>
+						  	</div>			
+					  		
+				    	</div>
+
+				    	<div class="row">
+							<div class="col-sm-5"><h5>Other Exclusions</h5></div>
+							<div class="container">
+						  		<textarea placeholder="&nbsp;&nbsp; Please write your comments" rows="2" id="comment_text" cols="40"></textarea>
+						  	</div>
+					  
+				    	</div>
+
+				    </div>
+				</section>
+				
+				<div class="container">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+
+							</div>
+
+							<div class="col-md-3">
+								<button class="btn btn-default" style="background-color: #e5e5e5;">Cancel</button>
+							</div>
+
+							<div class="col-md-3">
+								<button class="btn btn-danger">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+	  		</form>
+		</div>
+	</form>
+</div>
+
+   
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>var content_row = 1;
+
+function addContent() {
+  html = '<div id="content-row">';
+  html += '<div class="form-group">';
+  html += '<label class="col-sm-2">Page Content</label>';
+  html += '<div class="col-sm-10">';
+  html += '<textarea class="form-control" id="code_preview' + content_row + '" name="page_code[' + content_row + '][code]" style="height: 300px;"></textarea>';
+  html += '</div>';
+  html += '</div>';
+  html += '</div>';
+  $('#content-row').append(html);
+  $('#code_preview' + content_row).summernote({height: 300});
+
+  content_row++;
+}
+//# sourceURL=pen.js
+</script>
+
+</body>
+</html>
